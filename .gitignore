@@ -42,7 +42,9 @@ dlldata.c
 
 # DNX
 project.lock.json
+project.fragment.lock.json
 artifacts/
+Properties/launchSettings.json
 
 *_i.c
 *_p.c
@@ -108,6 +110,10 @@ _TeamCity*
 
 # DotCover is a Code Coverage Tool
 *.dotCover
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
 
 # NCrunch
 _NCrunch_*
@@ -188,6 +194,7 @@ ClientBin/
 *~
 *.dbmdl
 *.dbproj.schemaview
+*.jfm
 *.pfx
 *.publishsettings
 node_modules/
@@ -232,21 +239,8 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+*.vbw
+
 # Visual Studio LightSwitch build output
-**/*.HTMLClient/GeneratedArtifacts
-**/*.DesktopClient/GeneratedArtifacts
-**/*.DesktopClient/ModelManifest.xml
-**/*.Server/GeneratedArtifacts
-**/*.Server/ModelManifest.xml
-_Pvt_Extensions
-
-# Paket dependency manager
-.paket/paket.exe
-paket-files/
-
-# FAKE - F# Make
-.fake/
-
-# JetBrains Rider
-.idea/
-*.sln.iml
+**/*.HTMLClient/
