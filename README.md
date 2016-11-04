@@ -1,4 +1,4 @@
-# Heat Style Sample for WebAPI
+# MrSid Sample for WinForms
 
 MrSID (pronounced Mister Sid) is an acronym that stands for multiresolution seamless image database. In order to run this sample, development build 10.0.0.0 or later is required.
 
