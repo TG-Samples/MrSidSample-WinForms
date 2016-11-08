@@ -1,4 +1,6 @@
-﻿namespace ThinkGeo.MapSuite.Samples
+﻿using System.Drawing.Text;
+
+namespace ThinkGeo.MapSuite.Samples
 {
     partial class MainForm
     {
@@ -49,7 +51,7 @@
             this.winformsMap1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.Default;
             this.winformsMap1.TabIndex = 0;
             this.winformsMap1.Text = "winformsMap1";
-            this.winformsMap1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.winformsMap1.TextRenderingHint = ThinkGeo.MapSuite.Drawing.GeoTextRenderingHint.AntiAlias;
             this.winformsMap1.ThreadingMode = ThinkGeo.MapSuite.WinForms.MapThreadingMode.Default;
             this.winformsMap1.ZoomLevelSnapping = ThinkGeo.MapSuite.WinForms.ZoomLevelSnappingMode.Default;
             // 
