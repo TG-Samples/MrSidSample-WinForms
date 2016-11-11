@@ -62,15 +62,15 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.316.1\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.316.2\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.MrSid, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\lib\net40\ThinkGeo.MapSuite.Layers.MrSid.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.2\lib\net40\ThinkGeo.MapSuite.Layers.MrSid.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.WinForms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.316.1\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.316.2\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -98,7 +98,9 @@
     </Compile>
     <None Include="App_Data\World.sdw" />
     <None Include="App_Data\World.sid" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,7 +122,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets'))" />
-    <Error Condition="!Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets'))" />
+    <Error Condition="!Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.2\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.2\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets'))" />
   </Target>
-  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.2\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.2\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" />
 </Project>
