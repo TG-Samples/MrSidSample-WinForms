@@ -35,6 +35,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net45\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,29 +61,17 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="GeoAPI">
-      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net45\GeoAPI.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.316.1\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NetTopologySuite">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\NetTopologySuite.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.Layers.MrSid, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\lib\net40\ThinkGeo.MapSuite.Layers.MrSid.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="PowerCollections">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\PowerCollections.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Types">
-      <HintPath>..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.315.3\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.MrSid">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.315.3\lib\net40\ThinkGeo.MapSuite.Layers.MrSid.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.WinForms">
-      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.315.3\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ThinkGeo.MapSuite.WinForms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.316.1\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +98,7 @@
     </Compile>
     <None Include="App_Data\World.sdw" />
     <None Include="App_Data\World.sid" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,13 +108,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets" Condition="Exists('..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets')" />
-  <Import Project="..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets" Condition="Exists('..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets')" />
   <Import Project="..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.315.3\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.315.3\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" />
+  <Import Project="..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets" Condition="Exists('..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MapSuiteDependency-LizardTechMrSid.10.0.0.0\build\net40\MapSuiteDependency-LizardTechMrSid.targets'))" />
+    <Error Condition="!Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets'))" />
+  </Target>
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.MrSid.10.0.316.1\build\net40\ThinkGeo.MapSuite.Layers.MrSid.targets')" />
 </Project>
